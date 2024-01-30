@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+.note-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.note{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170px;
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 250px;
+  white-space: pre-wrap;
+}
+.add-note{
+  background-color: #67d7cc;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170px;
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+.input-note{
+  background-color: #67d7cc;
+  border: none;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-heading{
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchbar{
+  width:960px;
+  height:30px;
+  border-radius:8px;
+  background-color: #e9e9e9;
+  border:none;
+  margin-bottom: 24px;
+}
+.mode-btn,.save-btn{
+  background-color: #e9e9e9;
+  width: 96px;
+  height: 26px;
+  border-radius: 15px;
+  border: none;
+}
+.save-btn,.mode-btn:hover{
+  cursor: pointer;
+}
+.delete-icon{
+  cursor: pointer;
+}
